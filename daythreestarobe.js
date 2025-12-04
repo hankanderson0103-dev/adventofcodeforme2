@@ -15,7 +15,7 @@ for (const num of input) {
     const a = Number(s[i]);
     for (let j = i + 1; j < s.length; j++) {
       const b = Number(s[j]);
-      const value = 10 * a + b;        // objective: form two-digit number ab
+      const value = 10 * a + b;        
       if (value > bestValue) {
         bestValue = value;
         bestA = a;
@@ -25,13 +25,11 @@ for (const num of input) {
       }
     }
   }
-
-  // accumulate using the same representation you used before
   const firstnum = bestA * 10;
   const secondnum = bestB;
   totalcount += firstnum + secondnum;
 
-  console.log(`number=${s}  first=${bestA} (pos ${bestI})  second=${bestB} (pos ${bestJ})  subtotal=${firstnum + secondnum}  total=${totalcount}`);
+  //console.log(`number=${s}  first=${bestA} (pos ${bestI})  second=${bestB} (pos ${bestJ})  subtotal=${firstnum + secondnum}  total=${totalcount}`);
 }
 
 console.log('FINAL TOTAL =', totalcount);
