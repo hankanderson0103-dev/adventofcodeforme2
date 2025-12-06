@@ -36,9 +36,9 @@ for (let i = 0n; i < ranges.length; i++) {
     
 }
 for(let i = 0; i<nonoverlapping.length; i++){
-    indexofit = ranges.indexOf(String(...nonoverlapping[i]))
+    indexofit = ranges.indexOf((nonoverlapping[i][0]))
     if(!indexofit==-1){
-        console.log(ranges.splice(indexofit,1) + "   found")
+        console.log(ranges.slice(indexofit) + "   found")
     } else {console.log("not found   " + String(...nonoverlapping[i]))}
 }
 
