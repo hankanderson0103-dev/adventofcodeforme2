@@ -5,14 +5,21 @@ let connected = [];
 let tempthing = [];
 let tempthing2 = [];
 let indexthing = [];
+let pairs = [];
 
-function calcDist(point1, point2) {
-  const dx = point2[0] - point1[0];
-  const dy = point2[1] - point1[1];
-  const dz = point2[2] - point1[2];
-  return Math.sqrt(dx * dx + dy * dy + dz * dz);
+function calcDist(first, second) {
+  const dx = second[0] - first[0];
+  const dy = second[1] - first[1];
+  const dz = second[2] - first[2];
+  return (Math.sqrt(dx * dx + dy * dy + dz * dz));
 }
 
+for(let )
+
+
+
+
+/*
 for(let i=0;i<inputa.length;i++){
     let tempthing = [];
     let tempthing2 = [];
@@ -29,4 +36,4 @@ inputb.push([
 Math.min(...numpartpart), tempthing2[numpartpart.indexOf(Math.min(...numpartpart))]
 ]);
 }
-console.log(...inputb)
+console.log(...inputb) IT DOSNT WORK */
