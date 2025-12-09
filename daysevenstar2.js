@@ -13,19 +13,8 @@ for (let j = 0; j < inputa.length - 1; j++) {
     let nextTime = new Array(inputa[0].length).fill(0);
     
     for (let x = 0; x < inputa[j].length; x++) {
-        
-
-
-
-
-
-
-
         if (currTimelines[x] > 0) {
-
-
             const thingunder = inputa[j + 1][x];
-            
             
             
             if (thingunder == '^'){
